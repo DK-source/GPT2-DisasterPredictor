@@ -15,7 +15,11 @@ This repository contains the following:
     This directory contains the training code and the necessary assets to train the model,  
 	assets includes the multiple datasets for training and testing.  
     <br>
-* **[Predict.py]:**  
+* **[Output](https://github.com/DK-source/DMC2021F/tree/main/Output)**  
+    This directory contains a copy of your dataset created from 'Predict.py',  
+    	the dataset in .csv file now has a target column with an integer of 0 or 1.  
+	See **Instruction to use** below for explanation.  
+* **Predict.py:**  
     This code is for others to use to predict the disaster datasets.  
     <br>
 
@@ -24,14 +28,14 @@ This repository contains the following:
 1. Due to github not allowing big files to be pushed to their server,  
 you must trained the model yourselves before 'Predict.py' can be used.  
 To do so, simply run 'The Model.py',  
-inside the Training(https://github.com/DK-source/DMC2021F/tree/main/Training) directory.  
+inside the [Training](https://github.com/DK-source/DMC2021F/tree/main/Training) directory.  
 The training takes approximately 3-4 hours, but oculd be lowered by changing the epochs within the code.  
 
 2. After the model has finished training, simply run 'Predict.py'  
 and enter the path to the dataset to be predicted.  
 (i.e., C:/Download/RandomTweets.csv)
 
-3. The code will return a .csv files inside the Output(https://github.com/DK-source/DMC2021F/tree/main/Output) folder.  
+3. The code will return a .csv files inside the [Output](https://github.com/DK-source/DMC2021F/tree/main/Output) folder.  
 This file has an extra column containing an integer of 0 or 1.  
 A number 0 mean the tweet is very likely not about a disaster occuring.  
 Vice versa for a number 1.  
