@@ -53,7 +53,7 @@ def validation(dataloader, device_):
 model_name = 'gpt2'
 max_length = 60
 batch_size = 32
-model = joblib.load('GPT2model.pkl')
+model = joblib.load('./Training/GPT2model.pkl')
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 tokenizer.padding_side = "left"
 tokenizer.pad_token = tokenizer.eos_token
