@@ -31,11 +31,9 @@ you must trained the model yourselves before 'Predict.py' can be used.
 To do so, simply run 'The Model.py',  
 inside the [Training](https://github.com/DK-source/DMC2021F/tree/main/Training) directory.  
 The training takes approximately 3-4 hours, but oculd be lowered by changing the epochs within the code.  
-<br>
 2. After the model has finished training, simply run 'Predict.py'  
 and enter the path to the dataset to be predicted.  
 (i.e., C:/Download/RandomTweets.csv)
-<br>
 3. The code will return a .csv files inside the [Output](https://github.com/DK-source/DMC2021F/tree/main/Output) folder.  
 This file has an extra column containing an integer of 0 or 1.  
 A number 0 mean the tweet is very likely not about a disaster occuring.  
