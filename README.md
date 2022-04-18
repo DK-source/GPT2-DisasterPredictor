@@ -27,11 +27,14 @@ This repository contains the following:
 #### Instruction to use  
  
 1. Due to github not allowing big files to be pushed to their server,  
-you must trained the model yourselves before 'Predict.py' can be used.  
+you can either download a premade model [here](https://drive.google.com/drive/folders/1k7YH7RbHzAaQs7a8_EKfO-Y0qsJ0tAja?usp=sharing)  
+or train the model yourselves before 'Predict.py' can be used.  
 To do so, simply run 'The Model.py',  
 inside the [Training](https://github.com/DK-source/DMC2021F/tree/main/Training) directory.  
 The training takes approximately 3-4 hours, but oculd be lowered by changing the epochs within the code.  
-2. After the model has finished training, simply run 'Predict.py'  
+2. After the model has downloaded or finished training,  
+move the downloaded model to the [Training](https://github.com/DK-source/DMC2021F/tree/main/Training) folder if you havent,  
+run 'Predict.py',  
 and enter the path to the dataset to be predicted.  
 (i.e., C:/Download/RandomTweets.csv)
 3. The code will return a .csv files inside the [Output](https://github.com/DK-source/DMC2021F/tree/main/Output) folder.  
