@@ -59,6 +59,7 @@ Common Word Combination
 * Trained on Jupyter Notebook, on Intel Core i5-10600KF CPU.
 * Took 3-4 hours.
 * Stopped after training for 10 epoch.
+
 ![](./Assets/ROC_Loss.png)  
 ![](./Assets/ROC_Acc.png)  
 
