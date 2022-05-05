@@ -71,10 +71,10 @@ Common Word Combination
 
 ### Overview of files in repository
 
-* [Datasets](): this folder contains the datasets to train and test data.
-* [Output](): this folder will hold the new copy of the tested dataset with a new column 'target', see Performance Evaluation for details
-* [Predict.py](): loads the trained model and pplies it to the test data
-* [The Model.py](): trains the model in GPT2 and saves model during training.
+* [Datasets](https://github.com/DK-source/GPT2-DisasterPredictor/blob/main/Datasets): this folder contains the datasets to train and test data.
+* [Output](https://github.com/DK-source/GPT2-DisasterPredictor/blob/main/Output): this folder will hold the new copy of the tested dataset with a new column 'target', see Performance Evaluation for details
+* [Predict.py](https://github.com/DK-source/GPT2-DisasterPredictor/blob/main/Predict.py): loads the trained model and pplies it to the test data
+* [The Model.py](https://github.com/DK-source/GPT2-DisasterPredictor/blob/main/The%20Model.py): trains the model in GPT2 and saves model during training.
 
 ### Software Setup
 * Required libraries
@@ -115,9 +115,3 @@ Common Word Combination
 * https://www.kaggle.com/competitions/nlp-getting-started/overview
 * https://www.topbots.com/gpt2-text-classification-using-hugging-face-transformers/
 * https://www.kaggle.com/code/baekseungyun/gpt-2-with-huggingface-pytorch
-
-
-
-
-
-
