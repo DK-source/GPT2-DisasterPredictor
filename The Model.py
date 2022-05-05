@@ -123,8 +123,6 @@ train_size = int(len(train_dataset) * 0.8)
 val_size = len(train_dataset) - train_size
 train_dataset, valid_dataset = random_split(train_dataset, [train_size, val_size])
 print('Created `valid_dataset` with %d examples!'%len(valid_dataset))
-test_dataset = TweetsDataset(train=False)
-print('Created `test_dataset` with %d examples!'%len(test_dataset))
 train_dataloader = DataLoader(train_dataset,
                               batch_size=batch_size,
                               shuffle=True,
@@ -135,11 +133,6 @@ valid_dataloader = DataLoader(valid_dataset,
                               shuffle=False,
                               collate_fn=gpt2_classificaiton_collator)
 print('Created `eval_dataloader` with %d batches!'%len(valid_dataloader))
-test_dataloader = DataLoader(dataset=test_dataset,
-                             batch_size=batch_size,
-                             shuffle=False,
-                             collate_fn=gpt2_classificaiton_collator)
-print('Created `test_dataloader` with %d batches!'%len(test_dataloader))
 
 #Optimizer and Scheduler
 optimizer = AdamW(model.parameters(),
@@ -166,4 +159,4 @@ for epoch in range(epochs):
     print(f'Epoch: {epoch}, train_loss: {torch.tensor(train_loss).mean():.3f}, train_acc: {train_acc:.3f}, val_loss: {torch.tensor(valid_loss).mean():.3f}, val_acc: {valid_acc:.3f}')
 
 # Exporting Model
-joblib.dump(model, 'filename.pkl')
+joblib.dump(model, 'GPT2Model.pkl')

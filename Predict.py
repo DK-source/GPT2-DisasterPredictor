@@ -53,15 +53,16 @@ def validation(dataloader, device_):
 model_name = 'gpt2'
 max_length = 60
 batch_size = 32
-model = joblib.load('./Training/GPT2model.pkl')
+model = joblib.load('./Training/GPT2Model.pkl')
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 tokenizer.padding_side = "left"
 tokenizer.pad_token = tokenizer.eos_token
 gpt2_classificaiton_collator = Gpt2ClassificationCollator(tokenizer,max_length)
 
-
-path = input('Enter the path to the dataset that you want to predict: ')
 device = 'cpu'
+path = input('Enter the path to the dataset that you want to predict: ')
+if path == '':
+    path = './Datasets/test.csv'
 
 dataset = TweetsDataset(path)
 dataloader = DataLoader(dataset=dataset,
